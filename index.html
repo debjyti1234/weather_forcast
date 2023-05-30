@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f52975c9e5.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <title>Weather_forcast</title>
+</head>
+
+<body>
+  <div class="wrapper container-fluid row">
+    <div class="col-sm-8 main">
+      <div class="container">
+
+        <div class="main1 row">
+          <div class="col-sm-6">
+            <h3 id="time" class="color_blue">only time</h3>
+            <span id="date"><b>date_month</b></span>
+            <table>
+              <tr id="weeding">
+                <td> <img src="https://cdn-icons-png.flaticon.com/512/815/815568.png" height="28px" width="28px"
+                    alt="not avaliable"></td>
+
+                <td>
+                  <h5 class="color_blue"> Good morning Debjyoti!</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-6">
+            <div class="day_night" style="float: right;">
+              <span><img src="https://cdn-icons-png.flaticon.com/512/1178/1178199.png" width="25px" height="25px"
+                  alt="not here"></span>
+              <span style="float: right;"><img src="https://cdn-icons-png.flaticon.com/512/414/414891.png" width="20px"
+                  height="20px" alt="not here"></span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="six_days_temp" class="main2 row">
+          <div id="current-temp" class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/5342/5342349.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>sun <br>28°</span>
+          </div>
+          <div class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/494/494479.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>mon <br>17°</span>
+
+          </div>
+          <div class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/9643/9643864.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>tue <br>20°</span>
+          </div>
+          <div class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/2042/2042235.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>wed <br>29°</span>
+          </div>
+          <div class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/9232/9232020.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>thu <br>22°</span>
+          </div>
+          <div class="col-sm-2 card small_item">
+            <img src="https://cdn-icons-png.flaticon.com/512/8004/8004362.png" height="30%" width="30%"
+              alt="not avaliable">
+            <span>fri <br>16°</span>
+          </div>
+          
+        </div>
+
+
+        <div class="main3 row">
+          <div class="col-sm-6">
+            <div class="first-card">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <span><b>Air Quality index</b></span>
+                    </div>
+                    <div class="col-sm-6">
+                      <span style="float: right;"><i class="fa fa-location-dot"></i><span class="cuntry_name">  uttra, dhaka</span>
+                        <i class="fas fa-angle-down"></i></span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <table>
+                        <tr>
+                          <td>
+                            <!-- <img src="https://cdn-icons-png.flaticon.com/512/8131/8131551.png" height="30%"
+                              width="30%" alt="not here"> -->
+                            <span class="color_green"> <i class="fa-solid fa-wind" style="font-size: 30px;"></i></span>
+                          </td>
+                          <td><span class="color_green"><strong>Good</strong></span><br>A perfect day for a walk!</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="col-sm-4">
+                      <button type="button" class="btn btn-light"
+                        style="float: right;  color: #6c92fd;">Refresh</button>
+                    </div>
+                  </div>
+
+                  <div id="air_Quality" class="row">
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                    <div class="card col-sm-2 small_item_2">
+                      <span>9.3 <br>
+                        PM2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="second-card">
+                <div class="card">
+                  <div class="card-body">
+                    <span><strong>Monthly Rainfall</strong></span>
+                    <!-- change image here monthly Rainfall -->
+                    <div>
+                      <!-- <img
+                        src="https://www.researchgate.net/profile/Daniel-Nukpezah/publication/262067900/figure/fig3/AS:613888122966020@1523373742724/Average-rainfall-and-temperature-data-based-on-the-WorldClim-50-year-monthly-climate-data.png"
+                        width="100%" height="auto" alt="not here"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-sm-6">
+            <!-- single-card starts here -->
+            <div class="single-card">
+              <div class="card" style="height:auto;">
+
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <span id="city"><strong>Sunrise & Sunset</strong></span>
+                    </div>
+                    <div class="col-sm-6">
+                      <span style="float: right;">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <!-- <img
+                          src="https://w7.pngwing.com/pngs/68/239/png-transparent-number-computer-icons-plus-miscellaneous-game-plus-thumbnail.png"
+                          width="20px" height="20px" alt="not here" style="float: right;"> -->
+                      </span>
+                    </div>
+                  </div>
+                  <div class="row small_card">
+                    <div class="col-sm-6">
+                      <span><i class="fa fa-location-dot"></i> <strong class="cuntry_name">Dhaka</strong></span>
+
+                      <table>
+                        <tr>
+                          <td><img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" height="35px"
+                              width="35px" alt="not avaliable"></td>
+                          <td>Sunrise <br>
+                            <span class="color_blue"><strong id="Sunrise_1">4:40AM</strong></span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="col-sm-6">
+                      <span style="float: right;">
+                        <i class="fa-solid fa-ellipsis-vertical color_yellow"></i>
+                        <!-- <img
+                          src="https://w7.pngwing.com/pngs/19/426/png-transparent-three-dots-basic-ui-2-line-icon-thumbnail.png"
+                          height="20px" width="20px" alt="not here"> -->
+                      </span>
+                      <br>
+                      <table>
+                        <tr>
+                          <td><img src="https://cdn-icons-png.flaticon.com/512/2007/2007907.png" width="30px"
+                              height="30px" alt="not here"></td>
+                          <td>Sunset <br>
+                            <span class="color_blue"><strong id="Sunset_1">6:53PM</strong></span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+
+
+                  <div class="row small_card">
+                    <div class="col-sm-6">
+                      <span><i class="fa fa-location-dot"></i> <strong>Dhaka</strong></span>
+
+                      <table>
+                        <tr>
+                          <td><img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" height="35px"
+                              width="35px" alt="not avaliable"></td>
+                          <td>Sunrise <br>
+                            <span class="color_blue"><strong>4:40AM</strong></span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="col-sm-6">
+                      <span style="float: right;">
+                        <i class="fa-solid fa-ellipsis-vertical color_yellow"></i>
+                        <!-- <img
+                          src="https://w7.pngwing.com/pngs/19/426/png-transparent-three-dots-basic-ui-2-line-icon-thumbnail.png"
+                          height="20px" width="20px" alt="not here"> -->
+                      </span>
+                      <br>
+                      <table>
+                        <tr>
+                          <td><img src="https://cdn-icons-png.flaticon.com/512/2007/2007907.png" width="30px"
+                              height="30px" alt="not here"></td>
+                          <td>Sunset <br>
+                            <span class="color_blue"> <strong>6:53PM</strong></span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+
+
+                  <!-- table in single-card -->
+                  <table class="table table-borderless">
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td><i class="fa fa-location-dot color_yellow"></i></td>
+                            <td><b> Kabul</b></td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" height="20px"
+                                width="20px" alt="not avaliable"></td>
+                            <td> 5:00AM</td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2007/2007907.png" width="20px"
+                                height="20px" alt="not here"></td>
+                            <td> 7:00PM</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td><i class="fa fa-location-dot color_yellow"></i></td>
+                            <td><b> Kabul</b></td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" height="20px"
+                                width="20px" alt="not avaliable"></td>
+                            <td> 5:00AM</td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2007/2007907.png" width="20px"
+                                height="20px" alt="not here"></td>
+                            <td> 7:00PM</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td><i class="fa fa-location-dot color_yellow"></i></td>
+                            <td><b> Kabul</b></td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/831/831682.png" height="20px"
+                                width="20px" alt="not avaliable"></td>
+                            <td> 5:00AM</td>
+                          </tr>
+                        </table>
+                      </td>
+
+                      <td>
+                        <table>
+                          <tr>
+                            <td><img src="https://cdn-icons-png.flaticon.com/512/2007/2007907.png" width="20px"
+                                height="20px" alt="not here"></td>
+                            <td> 7:00PM</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- side bar starts here -->
+    <div class="col-sm-4 side_bar">
+      <div class="container">
+        <div class="side_bar_top row">
+          <div class="col-8">
+            <div class="main_search">
+
+              <!-- Actual search box -->
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input id="input-box" type="text" class="form-control" placeholder="Search...">
+                <!-- <span class="fa fa-location-dot"></span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-6"></div>
+              <div class="col-6">
+                <img src="https://cdn-icons-png.flaticon.com/512/565/565422.png" width="20px" height="20px"
+                  alt="not here" style="margin-top:20px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" width="20px" height="20px"
+                  alt="not here" style="float: right; margin-top:20px;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="side_bar_card">
+          <div class="card side_bar_card_1">
+            <div class="card-body">
+              <span style="margin-left: 5px;"><i class="fa fa-location-dot"></i> <strong class="cuntry_name"> Dhaka </strong><i
+                  class="fas fa-angle-down"></i></span>
+
+              <div id="weather_type_iconss">
+                <img src="https://cdn-icons-png.flaticon.com/512/2042/2042235.png" width="100px" height="100px" alt="not here">
+              </div>
+
+              <div style="text-align: center;">
+                <div id="side_bar_date"> <b>Today, 14 April</b></div>
+                
+                <div id="side_bar_only_temp">
+                  <span style="font-size: 44px;">29°</span><br>
+                  <span><b>Sunny</b></span>
+                </div>
+              </div>
+
+              <div id="side_bar_wind" style="text-align: center;">
+                <table class="table">
+                  <tr>
+                    <td>
+                      <i class='fas fa-wind'></i> Wind
+                    </td>
+                    <td>
+                      <b>|</b>
+                    </td>
+                    <td>19 km/h</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-droplet"></i> Hum</td>
+                    <td><b>|</b></td>
+                    <td>22%</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card last_card last_card_one">
+            <div class=" card-body">
+              <div class="row last_card_edit">
+                <div class="col-8">
+                  <div style="text-align: center;">
+                    <table class="table">
+                      <tr>
+                        <td>
+                          <span class='fas fa-wind' style="display: inline;"></span> Wind
+                        </td>
+                        <td>
+                          <b>|</b>
+                        </td>
+                        <td>19 km/h</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-droplet"></i> Hum</td>
+                        <td><b>|</b></td>
+                        <td>22%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="col-4" style="text-align: end;">
+
+                  <span><i class="fa fa-location-dot"></i> <strong> Dhaka </strong><i
+                      class="fas fa-angle-down"></i></span>
+
+                  <span style="font-size: 24px;">26°</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card last_card last_card_two">
+            <div class="card-body">
+              <div class="row last_card_edit">
+                <div class="col-8">
+                  <div style="text-align: center;">
+                    <table class="table table-borderless">
+                      <tr>
+                        <td>
+                          <i class='fas fa-wind'></i> Wind
+                        </td>
+                        <td>
+                          <b>|</b>
+                        </td>
+                        <td>19 km/h</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-droplet"></i> Hum</td>
+                        <td><b>|</b></td>
+                        <td>22%</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="col-4" style="text-align: end;">
+
+                  <span><i class="fa fa-location-dot"></i> <strong> Dhaka </strong><i
+                      class="fas fa-angle-down"></i></span>
+
+
+                  <span style="font-size: 24px;">26°</span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+      </script>
+    <script src="index.js"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
